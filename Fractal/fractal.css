@@ -1,0 +1,532 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Fractal implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * fractal.css
+ *
+ * Fractal stylesheet
+ *
+ */
+
+.fractal_board {
+	width: 741px;
+	height: 741px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Fractal_sky_board.png');
+}
+
+
+
+.tile_S {
+    width: 16.07px;     /* image width / 15 = 241 / 15 = 16.06667 */ 
+    height: 18.6px;     /* image height / 10 = 186 / 10 = 18.6 */ 
+
+    position: absolute;
+    background-image: url('img/Small_tiles.png');
+}
+
+.tile_M {
+    width: 46.09px;     /* image width / 11 = 507 / 11 = 46.0909 */ 
+    height: 53.17px;    /* image height / 12 = 638 / 12 = 53.1667 */ 
+
+    position: absolute;
+    background-image: url('img/Medium_tiles.png');
+}
+
+.tile_L {
+    /*    ###################################################### /*
+    /*                                                              */
+    /*    DON'T PUT SPACE BEFORE px.  CSS DOESN'T LIKE SPACES    */
+    /* 
+    /*    ###################################################### */
+
+
+     width: 134px;    /* image width / 12 = 1634 / 12 = 136.16667         */ 
+    /* width: 135px; */   /* image width / 12 = 1634 / 12 = 136.16667         */ 
+    /* width: 136px; */   /* image width / 12 = 1634 / 12 = 136.16667         */ 
+    /* width: 136.17px; */   /* image width / 12 = 1634 / 12 = 136.16667        ##########    MADE IMAGE A PIXEL LARGER     ########### */ 
+
+    /* width: 136.08px; */   /* image width / 12 = 1633 / 12 = 136.0833        ##########    NO.  THIS IS TOO FAT.  TRY THE 135 FROM ADOBE ILLUSTRATOR     ########### */ 
+    height: 157.5px;    /* image height / 2 = 315 / 2 = 157.5 */ 
+
+    position: absolute;
+    background-image: url('img/Large_tiles.png');
+}
+
+
+
+
+.selectable_cell {
+    /* background-color: #beff00; */  /* yellowish green */
+        opacity: 0.4; 
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+
+
+/* 
+   Placed tiles.
+       Number of placed tiles shown in player panel.
+*/
+.icon_placed_tiles_000000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Fractal_tiny_black_icon.png);
+}
+
+.icon_placed_tiles_00a400 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Fractal_tiny_green_icon.png);
+}
+
+
+
+
+
+
+    /* FROM ADOBE ILLUSTRATOR */
+    /*
+    S cell s-to-s, p-to-p = 15.0001, 17.3206
+    M cell s-to-s, p-to-p = 45.0001, 51.9616
+    L cell s-to-s, p-to-p = 135, 155.8846
+    */
+
+
+
+
+
+/* ##################### */
+
+/* LARGE ECCENTRIC CELLS */
+
+/* ##################### */
+
+.clickable_square_1000_1002 {         /* Starting at left corner cell and proceeding clockwise around perimeter */ 
+	width: 134px;               /* Shrink 1 pixel.  135 - 1 = 134     */  
+	height: 154.73px;           /* Shrink 1 "vertical pixel".  155.8846 - 2 / sqrt(3) = 155.8846 - 1.1547 = 154.7299     */ 
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* */ 
+    /* NO SPACE BETWEEN "polygon" and "("   */
+    /* */
+
+    /* Starting at left center and proceeding clockwise  ( X measured from LEFT, Y measured from TOP ) */
+    clip-path: polygon( 0% 25%, 50% 0%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 50% 100%, 0% 75%); 
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1000_1003 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1000_1004 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1001_1004 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1002_1004 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+     /* background-color: yellow; */
+}
+
+.clickable_square_1003_1003 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 50% 0%, 100% 25%, 100% 75%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1004_1002 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 16.67% 83.33%, 16.67% 66.77%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1004_1001 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 100% 25%, 100% 75%, 50% 100%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1004_1000 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 100% 25%, 100% 75%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1003_1000 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 75%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1002_1000 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 75%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_1001_1001 {   
+	width: 134px;               
+	height: 154.73px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+
+
+/* ##################### */
+
+/* MEDIUM ECCENTRIC CELLS */   /* M cell s-to-s, p-to-p = 45.0001, 51.9616 */
+
+/* ##################### */
+
+.clickable_square_103_105 {         /* Starting at left corner cell and proceeding clockwise */ 
+	width: 44px;               /* Shrink 1 pixel.  45.0001 - 1 = 44.0001     */  
+	height: 50.81px;           /* Shrink 1 "vertical pixel".  51.9616 - 2 / sqrt(3) = 51.9616 - 1.1547 = 50.8069     */ 
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* */ 
+    /* NO SPACE BETWEEN "polygon" and "("   */
+    /* */
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 50% 100%, 0% 75%); 
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_103_106 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_103_107 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_104_107 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_105_107 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_106_106 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 50% 0%, 100% 25%, 100% 75%, 66.67% 91.67%, 50% 83.33%, 33.33% 91.67%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_107_105 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 16.67% 83.33%, 16.67% 66.77%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_107_104 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 100% 25%, 100% 75%, 50% 100%, 16.67% 83.33%, 16.67% 66.67%, 0% 58.33% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_107_103 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 100% 25%, 100% 75%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_106_103 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 41.67%, 16.67% 33.33%, 16.67% 16.67%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 75%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_105_103 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 75%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+.clickable_square_104_104 {   
+	width: 44px;                 
+	height: 50.81px;           
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* Starting at left center and proceeding clockwise  */
+    clip-path: polygon( 0% 25%, 33.33% 8.33%, 50% 16.67%, 66.67% 8.33%, 83.33% 16.67%, 83.33% 33.33%, 100% 41.67%, 100% 58.33%, 83.33% 66.67%, 83.33% 83.33%, 50% 100%, 0% 75% );
+
+    /* background-color: yellow; */
+}
+
+
+
+/* ############ */
+
+/* MEDIUM CELL */   /* M cell s-to-s, p-to-p = 45.0001, 51.9616 */
+
+/* ############ */
+
+.clickable_square_100_100 {         /* No such cell.  Just generic. */
+	width: 44px;               /* Shrink 1 pixel.  45.0001 - 1 = 44.0001     */  
+    height: 50.81px;           /* Shrink 1 "vertical pixel".  51.9616 - 2 / sqrt(3) = 51.9616 - 1.1547 = 50.8069     */ 
+	/* width: 43px; */              /* Shrink 2 pixels.  45.0001 - 2 = 43.0001     */  
+	/* height: 49.65px; */          /* Shrink 2 "vertical pixels".  51.9616 -2 * (  2 / sqrt(3)  )  = 51.9616 - 2*1.1547 = 49.6522     */ 
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* */ 
+    /* NO SPACE BETWEEN "polygon" and "("   */
+    /* */
+
+    /* Starting at left center and proceeding clockwise ( X measured from LEFT, Y measured from TOP )  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%); 
+    /* background-color: yellow; */
+}
+
+
+
+
+/* ############ */
+
+/* SMALL CELL */      /* S cell s-to-s, p-to-p = 15.0001, 17.3206 */
+
+
+/* ############ */
+
+.clickable_square_0_0 {         /* No such cell.  Just generic. */
+	width: 14px;               /* Shrink 1 pixel.  15.0001 - 1 = 14.0001     */  
+    height: 16.17px;           /* Shrink 1 "vertical pixel".  17.3206 - 2 / sqrt(3) = 17.3206 - 1.1547 = 16.1659     */ 
+    position: absolute;
+    border-width: 0;
+
+    z-index: 2;
+
+    /* */ 
+    /* NO SPACE BETWEEN "polygon" and "("   */
+    /* */
+
+    /* Starting at left center and proceeding clockwise ( X measured from LEFT, Y measured from TOP )  */
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%); 
+    /* background-color: yellow; */
+}
+

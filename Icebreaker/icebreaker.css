@@ -1,0 +1,213 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Icebreaker implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * icebreaker.css
+ *
+ * Icebreaker stylesheet
+ *
+ */
+
+
+
+/* Note: you must not use any @import directive */
+
+
+/********* You can start writing your CSS below this line: **********/
+
+
+
+.board5 {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Icebreaker_board_size_5.png');
+    position: relative;
+    margin: auto;
+}
+
+.board6 {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Icebreaker_board_size_6.png');
+    position: relative;
+    margin: auto;
+}
+
+.board7 {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Icebreaker_board_size_7.png');
+    position: relative;
+    margin: auto;
+}
+
+.board8 {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Icebreaker_board_size_8.png');
+    position: relative;
+    margin: auto;
+}
+
+
+.square5 {
+    width: 71.8801px;
+    height: 83px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+.square6 {
+    width: 58.8894px;
+    height: 68px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+.square7 {
+    width: 50.2295px;
+    height: 58px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+.square8 {
+    width: 43.3013px;
+    height: 50px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+
+.checker5 {
+    width: 68px;
+    height: 68px;
+    /* width: 69px;
+    height: 69px; */
+    position: absolute;
+    background-image: url('img/Icebreaker_checkers_size_5.png');
+}
+
+.checker6 {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    background-image: url('img/Icebreaker_checkers_size_6.png');
+}
+
+.checker7 {
+    width: 45px;
+    height: 45px;
+    /* width: 44px;
+    height: 44px; */
+    position: absolute;
+    background-image: url('img/Icebreaker_checkers_size_7.png');
+}
+
+.checker8 {
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    background-image: url('img/Icebreaker_checkers_size_8.png');
+}
+
+
+.selectableChecker {
+    background-color: #66ffff; 
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.selectedChecker {
+    background-color: #ffff66; 
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.selectableDestination {
+    background-color: #66ff66; 
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.overlay_billboard {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+.coords_overlay5 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Icebreaker_coords_size_5.png');
+}
+
+.coords_overlay6 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Icebreaker_coords_size_6.png');
+}
+
+.coords_overlay7 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Icebreaker_coords_size_7.png');
+}
+
+.coords_overlay8 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Icebreaker_coords_size_8.png');
+}
+
+
+/* 
+   Captured checkers.
+       Number of captured checkers shown in player panel.
+*/
+.icon_captured_checkers {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Icebreaker_tiny_icon.png);
+}
+

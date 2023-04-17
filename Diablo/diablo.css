@@ -1,0 +1,335 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Diablo implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * diablo.css
+ *
+ * Diablo stylesheet
+ *
+ */
+
+/*
+    BOARDS 
+*/
+.checkerboard_6 {
+	width: 750px;
+	height: 850px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Diablo_board_size_6.png');
+}
+
+.checkerboard_8 {
+	width: 750px;
+	height: 850px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Diablo_board_size_8.png');
+}
+
+.checkerboard_10 {             
+	width: 750px;
+	height: 850px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Diablo_board_size_10.png');
+}
+
+
+/*
+    OVERLAYS 
+*/
+.coords_overlay_6 {
+    width: 750px;
+    height: 850px;
+    position: absolute;
+    background-image: url('img/Diablo_coords_size_6.png');
+}
+
+.coords_overlay_8 {
+    width: 750px;
+    height: 850px;
+    position: absolute;
+    background-image: url('img/Diablo_coords_size_8.png');
+}
+
+.coords_overlay_10 {
+    width: 750px;
+    height: 850px;
+    position: absolute;
+    background-image: url('img/Diablo_coords_size_10.png');
+}
+
+
+
+/*
+    CHECKERS 
+*/
+.black_checker_6 {
+    width: 108px; 
+    height: 108px;
+
+    position: absolute;
+    background-image: url('img/Diablo_black_checkers_size_6.png');
+}
+
+.black_checker_8 {
+    width: 78px; 
+    height: 78px;
+
+    position: absolute;
+    background-image: url('img/Diablo_black_checkers_size_8.png');
+}
+
+.black_checker_10 {
+    width: 62px; 
+    height: 62px;
+
+    position: absolute;
+    background-image: url('img/Diablo_black_checkers_size_10.png');
+}
+
+
+.yellow_checker_6 {
+    width: 108px; 
+    height: 108px;
+
+    position: absolute;
+    background-image: url('img/Diablo_yellow_checkers_size_6.png');
+}
+
+.yellow_checker_8 {
+    width: 78px; 
+    height: 78px;
+
+    position: absolute;
+    background-image: url('img/Diablo_yellow_checkers_size_8.png');
+}
+
+.yellow_checker_10 {
+    width: 62px; 
+    height: 62px;
+
+    position: absolute;
+    background-image: url('img/Diablo_yellow_checkers_size_10.png');
+}
+
+
+/*
+    DICE
+*/
+.die {
+    width: 62px;
+    height: 62px;
+
+    position: absolute;
+    background-image: url('img/Diablo_dice.png');
+}
+
+
+/*
+    LAST MOVE INDICATOR
+*/
+.last_move_indicator {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    background-image: url('img/Diablo_last_move_indicator.png');
+}
+
+
+/*
+    CLICKABLE SQUARES 
+*/
+.clickable_square_6 {   
+	width: 114px;         
+	height: 114px;         
+    position: absolute;
+
+    border-width: 0;
+
+    /* background-color: green; */
+
+    z-index: 3;
+}
+
+.clickable_square_8 {   
+	width: 84px;         
+	height: 84px;         
+    position: absolute;
+
+    border-width: 0;
+
+    /* background-color: green; */
+
+    z-index: 3;
+}
+
+.clickable_square_10 {   
+	width: 68px;         
+	height: 68px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: green; */
+
+    z-index: 3;
+}
+
+
+/*
+    PLACEMENT SQUARES  - CHECKERS ON 8X8 ARE SLIGHTLY OFF CENTER.  SO NEED COUNTER OFF CENTER PLACEMENT SQUARES
+*/
+.placement_square_6 {   
+	width: 114px;         
+	height: 114px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: magenta; */
+
+    z-index: 1;
+}
+
+.placement_square_8 {   
+	width: 84px;         
+	height: 84px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: magenta; */
+
+    z-index: 1;
+}
+
+.placement_square_10 {   
+	width: 68px;         
+	height: 68px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: magenta; */
+
+    z-index: 1;
+}
+
+
+
+/*
+    DICE SQUARE 
+*/
+.dice_square {   
+	width: 60px;         
+	height: 60px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red; */
+
+    z-index: 3;
+}
+
+
+
+/*
+    HIGHLIGHT COLORS 
+*/
+.selectableOriginSquare {
+    background-color: #00ff88;   /* sea green */
+
+        /* opacity: 0.3; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.selectedOriginSquare {
+     background-color: #6a61ff;  /* dark blue */
+
+        /* opacity: 0.3; */
+
+     cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.selectableDestinationSquare {
+     background-color: #f583ff;   /* pink */
+
+        /* opacity: 0.3; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.removableCheckerSquare {
+     background-color: #ff5659;  /* salmon */
+ 
+        /* opacity: 0.3; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+
+
+
+    /* background-color: #00ffc0; */
+
+        /* opacity: 0.3; */
+
+    /* background-color: #82e9ff; */
+
+        /* opacity: 0.3; */
+
+
+
+
+/*
+    OVERLAY BILLBOARD
+*/
+.overlay_billboard {
+    width: 750px;       
+    height: 850px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+/*
+    TINY ICONS
+*/
+.icon_remaining_checkers_000000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Diablo_tiny_black_icon.png);
+}
+
+.icon_remaining_checkers_ffff00 {    
+    width : 32px;               
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Diablo_tiny_yellow_icon.png);
+}

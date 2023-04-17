@@ -1,0 +1,188 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Zola implementation : © <Mark SteereMark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * zola.css
+ *
+ * Zola stylesheet
+ *
+ */
+
+.board6 {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Zola_backdrop.png');
+    position: relative;
+    margin: auto;
+}
+
+.board8 {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Zola_backdrop_8x8.png');
+    position: relative;
+    margin: auto;
+}
+
+
+.square6 {
+    width: 107px;
+    height: 107px;
+    position: absolute;
+    border-width: 0;
+
+    /* border-radius: 25px;
+    background-color: yellow; */
+}
+
+.square8 {
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    border-width: 0;
+
+    /* border-radius: 10px;
+    background-color: orange; */
+}
+
+
+.red_checker6 {
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    background-image: url('img/Zola_red_checkers.png');
+}
+
+.red_checker8 {
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    background-image: url('img/Zola_red_checkers_8x8.png');
+}
+
+
+.black_checker6 {
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    background-image: url('img/Zola_black_checkers.png');
+}
+
+.black_checker8 {
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    background-image: url('img/Zola_black_checkers_8x8.png');
+}
+
+
+.selectableChecker {
+    background-color: #99ff99; 
+    /* background-color: #66ff66; */
+    /* background-color: #33ff33; */
+    /* background-color: #41ff00; */
+    /* background-color: #fd02fd; */
+    /* background-color: #d529db; */
+    /* background-color: #00ff00; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.selectedChecker {
+    background-color: #99ffff; 
+    /* background-color: #66ffff; */
+    /* background-color: #33ffff; */
+    /* background-color: #00ffff; */
+    /*background-color: #00d9ff; */
+    /* background-color: #fd02fd; */
+    /* background-color: #d529db; */
+    /* background-color: #00ff00; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.selectableDestination {
+    background-color: #cc99ff; 
+    /* background-color: #ff66ff; */
+    /* background-color: #ff66ff; */
+    /* background-color: #ff33ff; */
+    /* background-color: #ff00ff; */
+    /* background-color: #ff00dd; */
+    /* background-color: #fd02fd; */
+    /* background-color: #d529db; */
+    /* background-color: #00ff00; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.overlay_billboard {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+.coords_overlay6 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Zola_coords.png');
+}
+
+.coords_overlay8 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Zola_coords_8x8.png');
+}
+
+
+/* 
+   Remaining checkers.
+       Number of remaining checkers shown in player panel.
+*/
+
+
+.icon_remaining_checkers_ff0000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Zola_red_tiny_icon.png);
+}
+
+.icon_remaining_checkers_000000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Zola_black_tiny_icon.png);
+}
+
+
+

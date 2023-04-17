@@ -1,0 +1,155 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Silo implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * silo.css
+ *
+ * Silo stylesheet
+ *
+ */
+
+ #board {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Silo_backdrop.png');
+    position: relative;
+    margin: auto;
+}
+
+.board {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Silo_backdrop.png');
+    position: relative;
+    margin: auto;
+}
+
+
+.square6 {
+    width: 113px;
+    height: 37px;
+    position: absolute;
+    border-width: 0;
+
+    /* border-radius: 25px; 
+    background-color: yellow; */
+}
+
+.square8 {
+    width: 84px;
+    height: 28px;
+    position: absolute;
+    border-width: 0;
+
+    /* border-radius: 25px; 
+    background-color: orange; */
+}
+
+
+.red_checker6 {
+    width: 107px;
+    height: 31px;
+    position: absolute;
+    background-image: url('img/Silo_red_checkers.png');
+}
+
+.red_checker8 {
+    width: 78px;
+    height: 22px;
+    position: absolute;
+    background-image: url('img/Silo_red_checkers_8x3.png');
+}
+
+
+.black_checker6 {
+    width: 107px;
+    height: 31px;
+    position: absolute;
+    background-image: url('img/Silo_black_checkers.png');
+}
+
+.black_checker8 {
+    width: 78px;
+    height: 22px;
+    position: absolute;
+    background-image: url('img/Silo_black_checkers_8x3.png');
+}
+
+
+.movableChecker {
+    background-color: #41ff00; 
+    /* background-color: #fd02fd; */
+    /* background-color: #d529db; */
+    /* background-color: #00ff00; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+
+
+.overlay_billboard {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+/*
+.coords_overlay {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Silo_coords.png');
+}
+*/
+
+.coords_overlay6 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Silo_coords.png');
+}
+
+.coords_overlay8 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Silo_coords_8x3.png');
+}
+
+
+/*
+.coords_overlay_reverse {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Silo_coords_reverse.png');
+}
+*/
+
+.coords_overlay_reverse6 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Silo_coords_reverse.png');
+}
+
+.coords_overlay_reverse8 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Silo_coords_reverse_8x3.png');
+}
+
+

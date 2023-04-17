@@ -1,0 +1,320 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Herd implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * herd.css
+ *
+ * Herd stylesheet
+ *
+ */
+
+/*
+    BOARDS 
+*/
+.board_4 {
+	width: 750px;
+	height: 690px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Herd_board_size_4.png');
+}
+
+.board_5 {
+	width: 750px;
+	height: 690px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Herd_board_size_5.png');
+}
+
+.board_6 {
+	width: 750px;
+	height: 690px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Herd_board_size_6.png');
+}
+
+
+
+/*
+    OVERLAYS 
+*/
+.coords_overlay_4 {
+    width: 750px;
+    height: 690px;
+    position: absolute;
+    background-image: url('img/Herd_coords_size_4.png');
+}
+
+.coords_overlay_5 {
+    width: 750px;
+    height: 690px;
+    position: absolute;
+    background-image: url('img/Herd_coords_size_5.png');
+}
+
+.coords_overlay_6 {
+    width: 750px;
+    height: 690px;
+    position: absolute;
+    background-image: url('img/Herd_coords_size_6.png');
+}
+
+
+
+/*
+    STONES 
+*/
+.black_stone_4 {
+    width: 82px; 
+    height: 82px;
+
+    position: absolute;
+    background-image: url('img/Herd_black_stone_size_4.png');
+}
+
+.black_stone_5 {
+    width: 64px; 
+    height: 64px;
+
+    position: absolute;
+    background-image: url('img/Herd_black_stone_size_5.png');
+}
+
+.black_stone_6 {
+    width: 52px; 
+    height: 52px;
+
+    position: absolute;
+    background-image: url('img/Herd_black_stone_size_6.png');
+}
+
+.white_stone_4 {
+    width: 82px; 
+    height: 82px;
+
+    position: absolute;
+    background-image: url('img/Herd_white_stone_size_4.png');
+}
+
+.white_stone_5 {
+    width: 64px; 
+    height: 64px;
+
+    position: absolute;
+    background-image: url('img/Herd_white_stone_size_5.png');
+}
+
+.white_stone_6 {
+    width: 52px; 
+    height: 52px;
+
+    position: absolute;
+    background-image: url('img/Herd_white_stone_size_6.png');
+}
+
+
+
+.die {
+    width: 62px;
+    height: 62px;
+
+    position: absolute;
+    background-image: url('img/Herd_dice.png');
+}
+
+
+
+
+
+/*
+    CLICKABLE CELLS 
+*/
+.clickable_cell_4 {   
+	width: 89.5307px;         
+	height: 103.3812px;         
+    position: absolute;
+
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+
+    border-width: 0;
+
+    /* background-color: purple; */
+    /* background-color: #66ff66; */
+    /* background-color: green; */
+         /* opacity: 0.19; */
+
+    z-index: 3;
+}
+
+.clickable_cell_5 {   
+	width: 69.75px;         
+	height: 80.54px;         
+    position: absolute;
+
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+
+    border-width: 0;
+
+    /* background-color: #00dc00; */
+         /* opacity: 0.19; */
+
+    z-index: 3;
+}
+
+.clickable_cell_6 {   
+	width: 57.62px;         
+	height: 66.54px;         
+    position: absolute;
+
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+
+    border-width: 0;
+
+    /* background-color: #00dc00; */
+         /* opacity: 0.19; */
+
+    z-index: 3;
+}
+
+
+
+/*
+    PLACEMENT CELLS  - STONES MAY BE SLIGHTLY OFF CENTER.  SO NEED COUNTER OFF-CENTER PLACEMENT CELLS
+*/
+.placement_cell_4 {   
+	width: 89.5307px;         
+	height: 103.3812px;         
+    position: absolute;
+
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+
+    border-width: 0;
+
+    /* background-color: orange; */
+
+    z-index: 1;
+}
+
+.placement_cell_5 {   
+	width: 69.75px;         
+	height: 80.54px;         
+    position: absolute;
+
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+
+    border-width: 0;
+
+    /* background-color: orange; */
+
+    z-index: 1;
+}
+
+.placement_cell_6 {   
+	width: 57.62px;         
+	height: 66.54px;         
+    position: absolute;
+
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+
+    border-width: 0;
+
+    /* background-color: orange; */
+
+    z-index: 1;
+}
+
+
+
+/*
+    DICE SQUARE 
+*/
+.dice_square {   
+	width: 60px;         
+	height: 60px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red; */
+
+    z-index: 3;
+}
+
+
+
+/*
+    HIGHLIGHT COLORS 
+*/
+.selectableCell {
+    background-color: #00ff00; 
+
+        /* opacity: 0.05; */
+         opacity: 0.10; 
+        /* opacity: 0.15; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.removableStone {
+    background-color: #ff0000;   
+
+        /* opacity: 0.40; */
+        /* opacity: 0.35; */
+        opacity: 0.30; 
+        /* opacity: 0.25; */
+        /* opacity: 0.15; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+
+
+/*
+    OVERLAY BILLBOARD
+*/
+.overlay_billboard {
+    width: 750px;       
+    height: 690px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+/*
+    TINY ICONS
+*/
+.icon_number_of_stones_000000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Herd_tiny_black_icon.png);
+}
+
+.icon_number_of_stones_00a0ff {    
+    width : 32px;               
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Herd_tiny_white_icon.png);
+}

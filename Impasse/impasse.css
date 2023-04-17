@@ -1,0 +1,290 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Impasse implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * impasse.css
+ *
+ * Impasse stylesheet
+ *
+ */
+
+/*
+    BOARDS 
+*/
+.checkerboard_8 {
+	width: 750px;
+	height: 750px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Impasse_board_size_8.png');
+}
+
+.checkerboard_10 {             
+	width: 750px;
+	height: 750px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Impasse_board_size_10.png');
+}
+
+
+/*
+    OVERLAYS 
+*/
+.coords_overlay_8 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Impasse_coords_size_8.png');
+}
+
+.coords_overlay_10 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Impasse_coords_size_10.png');
+}
+
+.reverse_coords_overlay_8 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Impasse_reverse_coords_size_8.png');
+}
+
+.reverse_coords_overlay_10 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Impasse_reverse_coords_size_10.png');
+}
+
+
+/*
+    CHECKERS 
+*/
+.red_checker_8 {
+    width: 80px; /* Image size 80.  Adobe Illustrator 79 */
+    height: 80px;
+
+    position: absolute;
+    background-image: url('img/Impasse_red_checker_size_8.png');
+}
+
+.red_checker_10 {
+    width: 62px; 
+    height: 62px;
+
+    position: absolute;
+    background-image: url('img/Impasse_red_checker_size_10.png');
+}
+
+.yellow_checker_8 {
+    width: 80px; /* Image size 80.  Adobe Illustrator 79 */
+    height: 80px;
+
+    position: absolute;
+    background-image: url('img/Impasse_yellow_checker_size_8.png');
+}
+
+.yellow_checker_10 {
+    width: 62px; 
+    height: 62px;
+
+    position: absolute;
+    background-image: url('img/Impasse_yellow_checker_size_10.png');
+}
+
+
+/*
+    BULLSEYES 
+*/
+.bullseye_8 {
+    width: 64px; /* Image size 64.  Adobe Illustrator 63 */
+    height: 64px;
+
+    position: absolute;
+    background-image: url('img/Impasse_bullseye_size_8.png');
+
+    z-index: 5;
+}
+
+.bullseye_10 {
+    width: 50px; 
+    height: 50px;
+
+    position: absolute;
+    background-image: url('img/Impasse_bullseye_size_10.png');
+
+    z-index: 5;
+}
+
+
+/*
+    LAST MOVE INDICATOR
+*/
+.last_move_indicator {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    background-image: url('img/Impasse_last_move_indicator.png');
+}
+
+
+/*
+    CLICKABLE SQUARES 
+*/
+.clickable_square_8 {   
+	width: 85px;         
+	height: 85px;         
+    position: absolute;
+
+    /* clip-path: polygon( 0% 20%, 20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%); */
+    /* clip-path: polygon( 0% 10%, 10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%); */
+
+    border-width: 0;
+
+    /* background-color: green; */
+
+    z-index: 3;
+}
+
+.clickable_square_10 {   
+	width: 68px;         
+	height: 68px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: green; */
+
+    z-index: 3;
+}
+
+
+/*
+    PLACEMENT SQUARES  - CHECKERS ON 8X8 ARE SLIGHTLY OFF CENTER.  SO NEED COUNTER OFF CENTER PLACEMENT SQUARES
+*/
+.placement_square_8 {   
+	width: 85px;         
+	height: 85px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: magenta; */
+
+    z-index: 1;
+}
+
+.placement_square_10 {   
+	width: 68px;         
+	height: 68px;         
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: magenta; */
+
+    z-index: 1;
+}
+
+
+/*
+    HIGHLIGHT COLORS 
+*/
+.selectableOrigin {
+    background-color: #00ff6b;   
+
+        /* opacity: 0.3; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.selectedOrigin {
+     background-color: #b2b2ff;   
+    /* background-color: #00ffff;   */
+
+        /* opacity: 0.3; */
+
+     cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.selectableDestination {
+     background-color: #00ffff;  
+    /* background-color: #b2b2ff;  */ 
+
+        /* opacity: 0.3; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.selectableCrown {
+    background-color: #00ffc0;   
+
+        /* opacity: 0.3; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.removableImpasseChecker {
+    background-color: #82e9ff;   
+
+        /* opacity: 0.3; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+
+/*
+    OVERLAY BILLBOARD
+*/
+.overlay_billboard {
+    width: 750px;       
+    height: 750px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+/*
+    TINY ICONS
+*/
+.icon_remaining_checkers_ff0000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Impasse_tiny_red_icon.png);
+}
+
+.icon_remaining_checkers_ffff00 {    
+    width : 32px;               
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Impasse_tiny_yellow_icon.png);
+}

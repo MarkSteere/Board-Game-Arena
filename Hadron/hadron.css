@@ -1,0 +1,228 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Hadron implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * hadron.css
+ *
+ * Hadron stylesheet
+ *
+ */
+
+ /*
+    BOARDS 
+*/
+.board_5 {
+	width: 750px;
+	height: 750px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Hadron_board_size_5.png');
+}
+
+.board_7 {             
+	width: 750px;
+	height: 750px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/Hadron_board_size_7.png');
+}
+
+
+/*
+    OVERLAYS 
+*/
+.coords_overlay_5 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Hadron_coords_size_5.png');
+}
+
+.coords_overlay_7 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Hadron_coords_size_7.png');
+}
+
+
+/*
+    TILES 
+*/
+.red_tile_5 {
+    width: 118px;   /* Image size 118.  Corner radius 10. */
+    height: 118px;
+
+    position: absolute;
+    background-image: url('img/Hadron_red_tile_size_5.png');
+}
+
+.red_tile_7 {       /* Image size 78.  Corner radius 10. */
+    width: 78px; 
+    height: 78px;
+
+    position: absolute;
+    background-image: url('img/Hadron_red_tile_size_7.png');
+}
+
+.blue_tile_5 {
+    width: 118px;   /* Image size 118.  Corner radius 10. */
+    height: 118px;
+
+    position: absolute;
+    background-image: url('img/Hadron_blue_tile_size_5.png');
+}
+
+.blue_tile_7 {       /* Image size 78.  Corner radius 10. */
+    width: 78px; 
+    height: 78px;
+
+    position: absolute;
+    background-image: url('img/Hadron_blue_tile_size_7.png');
+}
+
+
+
+/*
+    LAST MOVE INDICATORS
+*/
+.last_move_indicator_5 {
+    width: 146px;
+    height: 146px;
+
+    position: absolute;
+    background-image: url('img/Hadron_last_move_indicator_size_5.png');
+}
+
+.last_move_indicator_7 {
+    width: 106px;
+    height: 106px;
+
+    position: absolute;
+    background-image: url('img/Hadron_last_move_indicator_size_7.png');
+}
+
+
+/*
+    CLICKABLE SQUARES 
+*/
+.clickable_square_5 {   
+	width: 118px;         
+	height: 118px;         
+    position: absolute;
+
+    border-radius: 10px;
+
+    border-width: 0;
+
+    /* background-color: orange; */
+
+    z-index: 3;
+}
+
+.clickable_square_7 {   
+	width: 78px;         
+	height: 78px;         
+    position: absolute;
+
+    border-radius: 10px;
+
+    border-width: 0;
+
+    /* background-color: orange; */
+
+    z-index: 3;
+}
+
+
+/*
+    PLACEMENT SQUARES  - CHECKERS ON 8X8 ARE SLIGHTLY OFF CENTER.  SO NEED COUNTER OFF CENTER PLACEMENT SQUARES
+*/
+.placement_square_5 {   
+	width: 118px;         
+	height: 118px;         
+    position: absolute;
+
+    border-radius: 10px;
+
+    border-width: 0;
+
+    /* background-color: magenta; */
+
+    z-index: 1;
+}
+
+.placement_square_7 {   
+	width: 78px;         
+	height: 78px;         
+    position: absolute;
+
+    border-radius: 10px;
+
+    border-width: 0;
+
+    /* background-color: magenta; */
+
+    z-index: 1;
+}
+
+
+/*
+    HIGHLIGHT COLORS 
+*/
+.selectableSquare {
+    background-color: #66ff66; 
+
+        opacity: 0.19; 
+        /* opacity: 0.17; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+
+/*
+    OVERLAY BILLBOARD
+*/
+.overlay_billboard {
+    width: 750px;       
+    height: 750px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+/*
+    TINY ICONS
+*/
+.icon_placed_tiles_dc0000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Hadron_tiny_red_icon.png);
+}
+
+.icon_placed_tiles_2b7aff {    
+    width : 32px;               
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Hadron_tiny_blue_icon.png);
+}

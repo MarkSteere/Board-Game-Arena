@@ -1,0 +1,202 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Rive implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * rive.css
+ *
+ * Rive stylesheet
+ *
+ */
+
+
+
+/* Note: you must not use any @import directive */
+
+
+/********* You can start writing your CSS below this line: **********/
+
+.board3 {               /* Size 3 - small */
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Rive_board_size_3.png');
+    position: relative;
+    margin: auto;
+}
+
+.board5 {               /* Size 3x3x5 - medium */
+    width: 750px;
+    height: 500px;
+    background-image: url('img/Rive_board_size_3-3-5.png');
+    position: relative;
+    margin: auto;
+}
+
+.board4 {               /* Size 4 - large */
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Rive_board_size_4.png');
+    position: relative;
+    margin: auto;
+}
+
+
+.square3 {               /* Size 3 - small */               
+    width: 125.9028px;
+    height: 145.3812px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+.square5 {               /* Size 3x3x5 - medium */
+    width: 89.5307px;
+    height: 103.3812px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+.square4 {               /* Size 4 - large */
+    width: 89.5307px;
+    height: 103.3812px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+
+.checker3 {               /* Size 3 - small */ 
+    width: 112px;
+    height: 112px;
+
+    position: absolute;
+    background-image: url('img/Rive_stones_size_3.png');
+}
+
+.checker5 {               /* Size 3x3x5 - medium */
+    width: 82px;
+    height: 82px;
+
+    position: absolute;
+    background-image: url('img/Rive_stones_size_3-3-5.png');
+}
+
+.checker4 {               /* Size 4 - large */
+    width: 82px;
+    height: 82px;
+
+    position: absolute;
+    background-image: url('img/Rive_stones_size_3-3-5.png'); /* Same image file as size 3x3x5 */
+}
+
+
+.selectableCell {
+    background-color: #66ff66; 
+
+        /* opacity: 0.4; */
+        /*opacity: 0.35; */
+        /* opacity: 0.3; */
+                 opacity: 0.25; 
+        /* opacity: 0.23;  */
+        /* opacity: 0.2;  */
+        /* opacity: 0.15; */
+        /* opacity: 0.1; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.removableChecker {
+    /* background-color: #00ff00; */
+    /* background-color: #ff00ff; */
+    /* background-color: #9933ff; */
+    background-color: #ffff00;
+
+        /* opacity: 0.6; */
+        /* opacity: 0.5; */
+        opacity: 0.45; 
+        /*            opacity: 0.4; */
+        /* opacity: 0.35; */
+        /* opacity: 0.3; *;
+        /* opacity: 0.25; */
+
+   cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.overlay_billboard {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+.coords_overlay3 {               /* Size 3 - small */ 
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Rive_coords_size_3.png');
+}
+
+.coords_overlay5 {               /* Size 3x3x5 - medium */
+    width: 750px;
+    height: 500px;
+    position: absolute;
+    background-image: url('img/Rive_coords_size_3-3-5.png');
+}
+
+.coords_overlay4 {               /* Size 4 - large */
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Rive_coords_size_4.png');
+}
+
+
+/* 
+   Placed checkers.
+       Number of placed checkers shown in player panel.
+*/
+.icon_placed_checkers_ff0000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Rive_tiny_red_icon.png);
+}
+
+.icon_placed_checkers_0000ff {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Rive_tiny_blue_icon.png);
+}
+
+

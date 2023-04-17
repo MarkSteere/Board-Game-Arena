@@ -1,0 +1,140 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Dodo implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * dodo.css
+ *
+ * Dodo stylesheet
+ *
+ */
+
+/*
+    This is the CSS stylesheet of your game User Interface.
+    
+    Styles defined on this file will be applied to the HTML elements you define in your
+    HTML template (dodo_dodo.tpl), and to HTML elements you create dynamically
+    (in dodo.js).
+    
+    Usually, you are using CSS to:
+    
+    1°) define the overall layout of your game
+        (ex: place the board on the top left, place player's hand beside, place the deck on the right, ...).
+
+    2°) create your CSS-sprites:
+        All images of your games should be gathered into a small number of image files. Then, using
+        background-image and background-position CSS properties, you create HTML blocks that can 
+        display these images correctly (see example below).
+    
+    3°) ... anything else:
+        It is really easy to add and remove CSS classes dynamically from your Javascript with
+        dojo.addClass and dojo.removeClass. It is also easy to check if an element has a class
+        (dojo.hasClass) or to get all elements with a specific class (dojo.query). This is why,
+        very often, using CSS classes for the logic of your user interface allow you to do complex
+        thing easily.
+        
+        
+     Note: on the production platform, this file will be compressed and comments will be removed.
+           Consequently, don't hesitate to put as many comments as necessary.
+*/
+
+
+/* Note: you must not use any @import directive */
+
+
+/********* You can start writing your CSS below this line: **********/
+
+
+#board {
+    width: 740px;
+    height: 856px;
+    background-image: url('img/dodo_board.png');
+    position: relative;
+    margin: auto;
+}
+
+
+.square {
+    width: 120.0888px;
+    height: 104px;
+    position: absolute;
+    clip-path: polygon( 0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    border-width: 0;
+}
+
+
+.info_billboard {
+    width: 154px;
+    height: 54px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red; */
+}
+
+
+.checker {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('img/dodo_checkers.png');
+}
+
+
+.misere_stamp {
+    width: 152px;
+    height: 52px;
+    position: absolute;
+    background-image: url('img/Misere_stamp.png');
+}
+
+
+
+
+
+/* .checkercolor_ff0000 { background-position: 0px 0px; }
+.checkercolor_0000ff { background-position: 0px -300px; } */
+
+.selectableChecker {
+    background-color: #faff15; 
+
+    /* background-color: #ffffff; */
+    /* background-color: #ffa90a; */
+    /* background-color: #2459ff; */
+    /* background-color: #edbdff; */
+    /* background-color: #fd54ff; */
+    /* background-color: #cfff04; */
+    /* background-color: magenta; */
+    /* opacity: 0.2; */
+    /* filter:alpha(opacity=20);  For IE8 and earlier */  
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+.selectedChecker {
+    /* background-color: green;  */
+
+    background-color: #faff15;
+
+    /* background-color: #faff15;  */
+    cursor: pointer; 
+
+    z-index: 2;
+}
+
+.selectableDestination {
+    /* background-color: magenta;  */
+
+    background-color: #faff15;  
+
+    cursor: pointer; 
+    
+    z-index: 2;
+}
+
+

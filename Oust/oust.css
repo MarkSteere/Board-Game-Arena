@@ -1,0 +1,203 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Oust implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * oust.css
+ *
+ * Oust stylesheet
+ *
+ */
+
+/* Note: you must not use any @import directive */
+
+
+/********* You can start writing your CSS below this line: **********/
+
+
+.board6 {
+    width: 750px;
+    height: 690px;
+    background-image: url('img/Oust_board_size_6.png');
+    position: relative;
+    margin: auto;
+}
+
+.board7 {
+    width: 750px;
+    height: 690px;
+    background-image: url('img/Oust_board_size_7.png');
+    position: relative;
+    margin: auto;
+}
+
+.board8 {
+    width: 750px;
+    height: 690px;
+    background-image: url('img/Oust_board_size_8.png');
+    position: relative;
+    margin: auto;
+}
+
+
+.square6 {
+    width: 57.6218px;
+    height: 66.5359px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+.square7 {
+    width: 49.4615px;
+    height: 57.1132px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+.square8 {
+    width: 43.0333px;
+    height: 49.6906px;
+    position: absolute;
+    clip-path: polygon( 0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+
+.checker6 {
+    width: 56px;
+    height: 56px;
+
+    position: absolute;
+    background-image: url('img/Oust_checkers_size_6.png');
+}
+
+.checker7 {
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+    background-image: url('img/Oust_checkers_size_7.png');
+}
+
+.checker8 {
+    width: 42px;
+    height: 42px;
+
+    position: absolute;
+    background-image: url('img/Oust_checkers_size_8.png');
+}
+
+
+
+
+.last_move_indicator {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    background-image: url('img/Oust_last_move_indicator.png');
+}
+
+
+
+
+
+
+.selectableCell {
+    /* background-color: #c8ff00; */ /* yellowish green */
+     background-color: #beff00;   /* yellowish green */
+    /* background-color: #9bff00; */ /* /* yellowish green */
+    /* background-color: #7fff00; */  /* yellowish green */
+    /* background-color: #00ff00; */
+    /* background-color: #ff00ff; */
+    /* background-color: #ffff00; */  /* yellow */
+    /* background-color: #66ff66; */
+
+        /* opacity: 0.35; */  /* after visibility complaints */
+
+        /* opacity: 0.3; */
+        /* opacity: 0.25; */ 
+        opacity: 0.2; 
+        /* opacity: 0.15; */
+        /* opacity: 0.1; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.overlay_billboard {
+    width: 750px;
+    height: 690px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+.coords_overlay6 {
+    width: 750px;
+    height: 690px;
+    position: absolute;
+    background-image: url('img/Oust_coords_size_6.png');
+}
+
+.coords_overlay7 {
+    width: 750px;
+    height: 690px;
+    position: absolute;
+    background-image: url('img/Oust_coords_size_7.png');
+}
+
+.coords_overlay8 {
+    width: 750px;
+    height: 690px;
+    position: absolute;
+    background-image: url('img/Oust_coords_size_8.png');
+}
+
+
+/* 
+   Placed checkers.
+       Number of placed checkers shown in player panel.
+*/
+.icon_placed_checkers_5e3200 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Oust_tiny_brown_icon.png);
+}
+
+.icon_placed_checkers_00a0b4 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Oust_tiny_blue_icon.png);
+}
+
+
+

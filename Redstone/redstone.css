@@ -1,0 +1,427 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Redstone implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * redstone.css
+ *
+ * Redstone stylesheet
+ *
+ */
+
+
+.goban_9 {
+	width: 753px;
+	height: 806.361px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/goban_9x9.png');
+}
+
+.goban_11 {             /*  GET BOARD SIZES FROM FILE LISTING - NOT FROM ADOBE ILLUSTRATOR ############################################# */
+	width: 720px;
+	height: 772px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/goban_11x11.png');
+}
+
+.goban_13 {
+	width: 749px;
+	height: 802.053px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/goban_13x13.png');
+}
+
+.goban_15 {
+	width: 780px;
+	height: 836px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/goban_15x15.png');
+}
+
+.goban_19 {
+	width: 896px;
+	height: 960.372px;
+	position: relative;
+	margin: auto; 
+	background-image: url('img/goban_19x19.png');
+}
+
+
+.coords_overlay9 {
+    width: 754px;
+    height: 808px;
+    position: absolute;
+    background-image: url('img/goban_coords_9x9.png');
+}
+
+.coords_overlay11 {              /*  GET BOARD SIZES FROM FILE LISTING - NOT FROM ADOBE ILLUSTRATOR ############################################# */
+	width: 720px;
+	height: 772px;
+	position: absolute;
+	background-image: url('img/goban_coords_11x11.png');
+}
+
+.coords_overlay13 {
+    width: 750px;
+    height: 803px;
+    position: absolute;
+    background-image: url('img/goban_coords_13x13.png');
+}
+
+.coords_overlay15 {
+	width: 780px;
+	height: 836px;
+	position: absolute;
+	background-image: url('img/goban_coords_15x15.png');
+}
+
+.coords_overlay19 {
+    width: 896px;
+    height: 962px;
+    position: absolute;
+    background-image: url('img/goban_coords_19x19.png');
+}
+
+
+
+.clickable_square_9 {   /* Board square 77 x 82.929 */
+	width: 61.6px;         /* .8 x 77 = 61.6 */
+	height: 66.34px;        /* .8 x 82.929 = 66.3432  */ 
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: red; */
+
+    z-index: 3;
+}
+
+.clickable_square_11 {   /* Board square 60 x 64.62 */
+	width: 48px;         /* .8 x 60 = 48 */
+	height: 51.696px;        /* .8 x 64.62 = 51.696 */
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: red; */
+
+    z-index: 3;
+}
+
+.clickable_square_13 {   /* Board square 53 x 57.081 */
+	width: 42.4px;         /* .8 x 53 = 42.4 */
+	height: 45.66px;        /* .8 x 57.081 = 45.6648 */
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: red; */
+
+    z-index: 3;
+}
+
+.clickable_square_15 {   /* Board square 48 x 51.696 */
+	width: 38.4px;         /* .8 x 48 = 38.4 */
+	height: 41.3568px;        /* .8 x 51.696 = 41.3568 */
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: red; */
+
+    z-index: 3;
+}
+
+.clickable_square_19 {   /* Board square 44 x 47.388 */                
+	width: 35.2px;            /* .8 x 44 = 35.2 */
+	height: 37.91px;           /* .8 x 47.388 = 37.9104 */
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: red; */
+
+    z-index: 3;
+}
+
+
+.placement_square_9 {
+	width: 77px;         /* Square width 77 */
+	height: 77px;        
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: yellow; */
+
+    z-index: 1;
+}
+
+.placement_square_11 {
+	width: 60px;         /* Square width 60 */
+	height: 60px;        
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: yellow; */
+
+    z-index: 1;
+}
+
+.placement_square_13 {
+	width: 53px;         /* Square width 53 */
+	height: 53px;        
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: yellow; */
+
+    z-index: 1;
+}
+
+.placement_square_15 {
+	width: 48px;         /* Square width 48 */
+	height: 48px;        
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: yellow; */
+
+    z-index: 1;
+}
+
+.placement_square_19 {                
+	width: 44px;            /* Square width 44 */
+	height: 44px;           
+    position: absolute;
+    border-width: 0;
+
+    border-radius: 50%;
+    /* background-color: yellow; */
+
+    z-index: 1;
+}
+
+
+.white_stone_9 {
+    width: 75px;
+    height: 75px;
+
+    position: absolute;
+    background-image: url('img/white_stones_9x9.png');
+}
+
+.white_stone_11 {
+    width: 59px;
+    height: 59px;
+
+    position: absolute;
+    background-image: url('img/white_stones_11x11.png'); 
+}
+
+.white_stone_13 {
+    width: 52px;
+    height: 52px;
+
+    position: absolute;
+    background-image: url('img/white_stones_13x13.png'); 
+}
+
+.white_stone_15 {
+    width: 47px;
+    height: 47px;
+
+    position: absolute;
+    background-image: url('img/white_stones_15x15.png'); 
+}
+
+.white_stone_19 {
+    width: 43px;
+    height: 43px;
+
+    position: absolute;
+    background-image: url('img/white_stones_19x19.png'); 
+}
+
+
+.black_or_red_stone_9 {
+    width: 77px;
+    height: 77px;
+
+    position: absolute;
+    background-image: url('img/Redstone_black_and_red_stones_size_9.png');
+}
+
+.black_or_red_stone_11 {
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    background-image: url('img/Redstone_black_and_red_stones_size_11.png');
+}
+
+.black_or_red_stone_13 {
+    width: 53px;
+    height: 53px;
+
+    position: absolute;
+    background-image: url('img/Redstone_black_and_red_stones_size_13.png');
+}
+
+.black_or_red_stone_15 {
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+    background-image: url('img/Redstone_black_and_red_stones_size_15.png');
+}
+
+.black_or_red_stone_19 {
+    width: 44px;
+    height: 44px;
+
+    position: absolute;
+    background-image: url('img/Redstone_black_and_red_stones_size_19.png');
+}
+
+
+
+
+
+.last_move_indicator {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    background-image: url('img/Redstone_last_move_indicator.png');
+}
+
+
+
+
+
+
+
+.nonCapturingSelectableSquare {
+     background-color: #00ff00;   
+
+        /* opacity: 0.2; */
+        opacity: 0.18; 
+        /* opacity: 0.15; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.capturingSelectableSquare {
+     background-color: #ff0000;   
+
+        /* opacity: 0.4; */
+        opacity: 0.3; 
+        /* opacity: 0.2; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.nonCapturingOrCapturingSelectableSquare {
+     background-color: #ffff00;   
+
+        /* opacity: 0.4; */
+        opacity: 0.3; 
+        /* opacity: 0.2; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.nonCapturingOrCapturingSelectedSquare {
+     background-color: #ffff00;   
+
+        opacity: 0.5; 
+        /* opacity: 0.4; */
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+
+
+
+.nonCapturingSelectableSquare_noColor {
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.capturingSelectableSquare_noColor {
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+.nonCapturingOrCapturingSelectableSquare_noColor {
+
+    cursor: pointer; 
+    
+    z-index: 3;
+}
+
+
+
+
+
+.overlay_billboard {
+    width: 836px;       /* size of 19 x 19 */
+    height: 960.372px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+/* 
+   Placed stones.
+       Number of placed stones shown in player panel.
+*/
+.icon_placed_stones_000000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Redstone_tiny_black_icon.png);
+}
+
+.icon_placed_stones_6464ad {    /* Using 6464ad (blue) instead of ffffff (white) to match player default colors */
+    width : 32px;               /* Player default colors are black and blue (instead of black and white) so the text will be visible against white background */
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Redstone_tiny_white_icon.png);
+}

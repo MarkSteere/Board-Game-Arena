@@ -1,0 +1,187 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Cephalopod implementation : © <Mark Steere> <marksteere@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * cephalopod.css
+ *
+ * Cephalopod stylesheet
+ *
+ */
+
+.board3 {
+    width: 750px;
+    height: 470px;
+    background-image: url('img/Cephalopod_board_size_3.png');
+    position: relative;
+    margin: auto;
+}
+
+.board5 {
+    width: 750px;
+    height: 750px;
+    background-image: url('img/Cephalopod_board_size_5.png');
+    position: relative;
+    margin: auto;
+}
+
+
+.square {
+    width: 124px;
+    height: 124px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: yellow; */
+}
+
+
+
+.die {
+    width: 92px;
+    height: 92px;
+
+    position: absolute;
+    background-image: url('img/Cephalopod_dice.png');
+}
+
+
+
+
+.last_move_indicator {
+    width: 140px;
+    height: 140px;
+
+    position: absolute;
+    background-image: url('img/Cephalopod_last_move_indicator.png');
+
+    opacity: 0.5; 
+}
+
+
+
+
+
+
+.selectableSquare {
+    background-color: #00ffff; 
+
+        /* opacity: 0.3; */
+        /* opacity: 0.25; */
+        /* opacity: 0.2; */
+        /* opacity: 0.15; */
+         opacity: 0.1; 
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+.selectedSquare {
+    background-color: #00ffff; 
+
+        /* opacity: 0.5; */
+         opacity: 0.3; 
+        /* opacity: 0.25; */
+        /* opacity: 0.2; */
+        /* opacity: 0.18; */
+        /* opacity: 0.15; */
+        /* opacity: 0.1; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.selectableDie {
+    background-color: #ff00ff; 
+
+        /* opacity: 0.3; */
+        /* opacity: 0.25; */
+        /* opacity: 0.2; */ 
+        /* opacity: 0.15; */
+         opacity: 0.1; 
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+.selectedDie {
+    background-color: #ff0000; 
+
+        /* opacity: 0.5; */
+        opacity: 0.48; 
+        /* opacity: 0.4; */
+        /* opacity: 0.25; */
+        /* opacity: 0.2; */ 
+        /* opacity: 0.15; */
+        /* opacity: 0.1; */
+
+    cursor: pointer; 
+    
+    z-index: 1;
+}
+
+
+.overlay_billboard {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    border-width: 0;
+
+    /* background-color: red;  */
+}
+
+
+.coords_overlay3 {
+    width: 750px;
+    height: 470px;
+    position: absolute;
+    background-image: url('img/Cephalopod_coords_size_3.png');
+}
+
+.coords_overlay5 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    background-image: url('img/Cephalopod_coords_size_5.png');
+}
+
+
+
+/* 
+   Placed checkers.
+       Number of placed checkers shown in player panel.
+*/
+.icon_placed_dice_000000 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Cephalopod_tiny_black_icon.png);
+}
+
+.icon_placed_dice_00a400 {
+    width : 32px;
+    height : 32px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align : left;
+    background-image : url(img/Cephalopod_tiny_green_icon.png);
+}
+
+
+
